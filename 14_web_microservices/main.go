@@ -16,10 +16,11 @@ func main() {
 	fmt.Println("Server Starting...")
 
 	l := log.New(os.Stdout, "product-api", log.LstdFlags)
-	hh := handlers.NewHello(l)
+
+	ph := handlers.NewProducts(l)
 
 	sm := http.NewServeMux()
-	sm.Handle("/", hh)
+	sm.Handle("/", ph)
 
 	s := &http.Server{
 		Addr:         ":3000",
