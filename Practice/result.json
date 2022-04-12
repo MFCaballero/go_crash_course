@@ -1,0 +1,195 @@
+[
+    {
+        "context": {
+            "scan_id": "SCAN202107162328049475NbKBBMIhKxsMZi",
+            "customer": "c21fb865-91e8-4ca6-b9e0-bf265623e32f",
+            "service": "scancloud-test-client",
+            "agent": "mgAgentId",
+            "accepted_scan": "2021-07-16T23:28:04.953",
+            "end_scan": "2021-07-16T23:31:08.131",
+            "scan_duration": 183178
+        },
+        "results": {
+            "farmd": [
+                {
+                    "spam_classifier": "spam",
+                    "spam_report_info": {
+                        "score": [
+                            {
+                                "clx": 1001,
+                                "adult": 0,
+                                "impostor": 0,
+                                "malware": 0,
+                                "mlx": 0,
+                                "lowpriority": 0,
+                                "spam": 0,
+                                "suspect": 0,
+                                "mlxlog": 416,
+                                "engine": 0,
+                                "bulk": 0,
+                                "priority": 1501,
+                                "phish": 0
+                            }
+                        ],
+                        "urls": {
+                            "u": [
+                                "attachment:text.txt",
+                                "attachment:sneaky.doc",
+                                "mailto:test.from@email.com"
+                            ]
+                        },
+                        "charset": "unknown",
+                        "langs": {
+                            "lang": [
+                                {
+                                    "cnt": 4,
+                                    "id": "pt"
+                                },
+                                {
+                                    "cnt": 2,
+                                    "id": "es"
+                                },
+                                {
+                                    "cnt": 51,
+                                    "id": "en"
+                                },
+                                {
+                                    "cnt": 4,
+                                    "id": "jp"
+                                }
+                            ]
+                        },
+                        "msg_time": 1626478085.20498,
+                        "hashed_to_addresses": {
+                            "a": [
+                                "000c98dce4d5f26a144586c34eafe666@example.net"
+                            ]
+                        },
+                        "tests": {
+                            "t": [
+                                "PP_ATTACHMENT_TXT",
+                                "PP_ATTACHMENT_DOC",
+                                "PP_IMG_COUNT_0",
+                                "PP_RCPT_COUNT_1",
+                                "PP_NO_REVERSE",
+                                "PP_NO_HELO",
+                                "PP_ENVELOPE_FROM_DOMAIN_EMAIL",
+                                "PP_URL_DOMAIN_COUNT_0",
+                                "PP_EXT_TXT",
+                                "PP_EXT_DOC",
+                                "PP_OEXT_DOC",
+                                "PP_OEXT_TXT",
+                                "PP_OEXT_DOC_EXT_DOC",
+                                "PP_OEXT_TXT_EXT_TXT",
+                                "FROM_NO_LOWER",
+                                "MISSING_HB_SEP",
+                                {
+                                    "content": "PP_BODY_DIGIT_COUNT",
+                                    "c": "6"
+                                },
+                                "PP_CT_BOUND_BASE64_16",
+                                "PP_CT_MULTIPART_MIXED",
+                                "PP_DATE_TMZ_INVALID",
+                                "PP_DATE_TMZ_NOT_UTC",
+                                "PP_FROM_NOANGLES",
+                                "PP_HAS_0_HTTP_URIS",
+                                "PP_HAS_TO",
+                                "PP_MIME_PLAINTEXT_ONLY",
+                                "PP_MSG_SIZE_501_1000",
+                                "PP_NO_CTE",
+                                "PP_NO_MSGID",
+                                "PP_NO_MUA",
+                                "PP_CLX_SHADE_NONE"
+                            ]
+                        },
+                        "derived_urls": {
+                            "u": [
+                                "mailto:test.from@email.com"
+                            ]
+                        },
+                        "scoringAPI": "{\"finalClassifier\":{\"mode\":\"condemnation\",\"name\":\"scoring\",\"timestamp\":\"2021-07-16T23:28:05.619Z\",\"classifications\":[{\"confidence\":0.0,\"classification\":\"unknown\"}],\"version\":\"1.0\",\"explainability\":{},\"status\":\"success\",\"detectionStage\":\"inline\"},\"responseTime\":\"2021-07-16T23:28:05.620Z\",\"origGuid\":\"undefined\",\"guid\":\"undefined\",\"messageHold\":{\"score\":0,\"messageHoldRecommendation\":\"send\",\"status\":\"success\",\"holdReasons\":{\"udHold\":{\"urls\":[]}}},\"messageTime\":\"2021-07-16T23:28:05.534Z\",\"classifiers\":{\"clx\":{\"error\":{},\"mode\":\"shadow\",\"name\":\"clx\",\"metadata\":{\"finalScore\":\"1001\",\"clusterShadeMode\":\"NEW\",\"impostorScore\":\"0\",\"shade\":\"None\",\"response\":\"1001 0 fs=1001; sn=OAruytWcweI; ib=-1; is=51; ic=0.000; sg=None; sc=; st=IDS; cl=acmecorp_hosted; id=msgGuid; rv=5.0.233/10.24.17.6:14050; ts=YJ7qg; gv=0; fl=IE; ip=255.255.255.255; hd=CLJ386cGGQR; hf=HAqImpf9Thz; hj=LgV/DZsDsYz; hr=C0VfkDOp2gp; Si=N33E3Am57nY; ZB=Ha2xZouePlA:0; ZB=A8qtIznEyAq:0; ZB=K21mUakezJj:0; GT=0; rg=a;\",\"overrideSource\":\"\",\"override\":\"false\",\"timeSpentMillis\":\"2.00\",\"senderEmail\":\"test.from@email.com\"},\"timestamp\":\"2021-07-16T23:28:05.540Z\",\"classifications\":[{\"confidence\":100.0,\"classification\":\"unknown\"}],\"version\":\"5.0.233\",\"explainability\":{\"metadata\":{\"impSubjGvcScore\":\"51\",\"impBodyGvcScore\":\"-1\",\"drf\":\"ND=1 WC=75\"},\"reason\":\"\",\"themes\":[]},\"status\":\"success\",\"detectionStage\":\"inline\"},\"supernova\":{\"mode\":\"condemnation\",\"name\":\"supernova\",\"metadata\":{\"objectName\":\"msgGuid\"},\"timestamp\":\"2021-07-16T23:28:05.580Z\",\"classifications\":[{\"confidence\":0.0,\"classification\":\"none\"}],\"version\":\"1.0\",\"explainability\":{\"metadata\":{\"objectName\":\"msgGuid\"},\"reason\":\"none\"},\"status\":\"success\",\"detectionStage\":\"inline\"}}}",
+                        "spamversion": [
+                            {
+                                "engine": "8.12.0-2107160000",
+                                "definitions": "main-2107160149"
+                            }
+                        ],
+                        "lang": "en",
+                        "compound_terms": {
+                            "t": [
+                                "<s><probesubjs005>",
+                                "<s><russianspam02phrases01>",
+                                "<s><mortgagewords02>",
+                                "<s><rg_voicemail_terms>",
+                                "<s><sl_mail_words_20190730_1>",
+                                "<sub_call_mess>",
+                                "<f><probesubjs005>",
+                                "<f><multimailto>",
+                                "<a><efd_sc_dollar_01>",
+                                "<a><probesubjs005>",
+                                "<a><sl_mail_words_20190730_1>",
+                                "<meta_has_document>",
+                                "<oleattached>",
+                                "<russianspam02phrases01>",
+                                "<mortgagewords02>",
+                                "<webmail_phish_tail>",
+                                "<efd_sc_dollar_01>",
+                                "<probesubjs005>",
+                                "<sl_mail_words_20190730_1>",
+                                "<msgsize_0_10000>",
+                                "<msgsize_0_5000>",
+                                "<msgsize_0_3500>",
+                                "<z><meta_1_attachment>",
+                                "<a><meta_1_attachment>",
+                                "<u><meta_1_attachment>",
+                                "<i><meta_1_attachment>",
+                                "<f><meta_1_attachment>",
+                                "<s><meta_1_attachment>",
+                                "<meta_1_attachment>",
+                                "<aml_awol_payloads_004>",
+                                "<f><domain>",
+                                "<u><url>",
+                                "<i><domain>"
+                            ]
+                        }
+                    },
+                    "spam_version": "engine=8.12.0-2107160000 definitions=main-2107160149",
+                    "spam_rscore": 0,
+                    "spam_headers": {
+                        "X-CLX-Response": "1TFkXGxoaGxEKWUQXZWtYX1NefUldT2MRCkNIFwcbEQpDWRcfGxEKQ0kXGgQ\n aGhoRCllNF2RFRE8RCllJFxEKWV4XY255EQpJRhdLSUdPSUVYWnVCRVleT04RCkNOF0dZTW1fQ0\n 4RClhcFx8EGgQYGRkFGxoEGB4EGx0EHBAbHhofGhEKXlkXc2AdW00RCk1cFxoRCkxGF2NvEQpDW\n hcYHx8EGB8fBBgfHwQYHx8RCkJOF2lmYBkSHEltbXt4EQpCTBdia1tjR1pME35CUBEKQkAXZk18\n BW5wWW5Zc1ARCkJYF2kafExBbmVaGE1aEQp5QxdkGRlvGWtHHx1EcxEKcGgXYksYUnBFX096Rms\n QGhEKcGgXaxJbXmNQRG9Ta1sQGhEKcGgXYRgbR39LQU9QYEAQGhEKbX4XGhEKWE0XSxEg",
+                        "X-Proofpoint-ORIG-GUID": null,
+                        "X-Proofpoint-GUID": null,
+                        "X-CLX-Shades": "None"
+                    },
+                    "spam_scores":%s,
+                    "av_version": "vendor=fsecure engine=2.50.10434:6.0.391,18.0.761 definitions=2021-07-16_02:2021-07-16,2021-06-02 signatures=0",
+                    "spam_per_rcpt": [],
+                    "av_virusname": "malware.eicar-test-signature",
+                    "spam_tests":%s,
+                    "av_result": "%s",
+                    "spam_mlxscore": %s
+                }
+            ],
+            "tapad_frs": [
+                {
+                    "frs_responses": [
+                        {
+                            "file_scores": {
+                                "e8ff07bf63cd773aad827afb9fe77b1feb684e4812acd82209966880b40251e4": {
+                                    "verdict": "%s",
+                                    "waiting_for_wildfire_result": false
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "data":%s,
+        "errors": [],
+        "info": [
+            "2021-07-16T23:28:05.73: plugin farmd finished in 476 msec with 1 result(s), 4 new data",
+            "2021-07-16T23:31:08.106: plugin tapad_frs finished in 182041 msec with 1 result(s), 0 new data"
+        ]
+    }
+]
